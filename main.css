@@ -64,8 +64,12 @@ section {
 
 section h2 {
     margin-bottom: 16px;
+    text-decoration: solid #61b8c7 underline;
 }
 
+#paragrafo {
+    font-weight: 3px;
+}
 .tenis {
     margin-right: 34px;
     
@@ -81,13 +85,28 @@ section h2 {
     margin-bottom: 15px;
 }
 
+.lista-tenis li h3 {
+    margin: 8px 0;
+}
+
+.lista-tenis li p {
+    margin: 10px 0;
+    display: block;
+}
+
 .lista-tenis li img {
     max-width: 100%;
 }
 
 .item-central {
-    margin: 0 5%;
+    margin: 0 2.5%;
 }
+.item-lateral {
+    margin-left: 2.5%;
+}
+.item-lateral1 {
+    margin-right: 2.5%;
+} 
 
 #adidas, #allstar  {
     transform: scaleX(-1)
