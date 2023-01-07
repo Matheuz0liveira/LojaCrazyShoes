@@ -20,6 +20,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1;
+    margin-bottom: 30px;
 }
 header h1 {
     font-style: italic;
@@ -30,7 +31,7 @@ footer >.container  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:16px;
+    padding-bottom:20px;
 }
 
 header nav li {                                       /*Alinhamento da lista do menu*/
@@ -56,12 +57,14 @@ header nav li a {                                    /* Layout e caracteristicas
 
 .loja {
     max-width: 340px;
-    margin-right: 40px;
+    margin-right: 35px;
 }
 
 section {
     padding: 30px 0;
 }
+
+section#produtos {}
 
 section h2 {
     margin-bottom: 16px;
@@ -72,8 +75,25 @@ section h2 {
     font-style: italic;
 }
 
+.crazyy{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3fa5b8;
+}
+
+.special  {
+    /*text-decoration:underline solid 2px orange;*/
+    color: rgb(0, 0, 0);
+    /*font-family: 'Barlow Semi Condensed', sans-serif;*/
+    text-transform: uppercase;
+    max-width: bold;
+}
+
 section p {
     padding-top: 15px;
+}
+.sublinhado {
+    text-decoration: underline;
 }
 .tenis {
     margin-right: 34px;
@@ -129,4 +149,74 @@ button {
     font-style: italic;
     cursor: pointer;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 767px) {
+    
+    header .container{
+        max-width: 80%;
+    }
+
+    header nav li {                                       /*Alinhamento da lista do menu*/
+        font-size: 21px;
+    }
+
+    
+
+    section .container {
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    header {
+        margin-bottom: 0px;
+        position: static;
+    }
+
+    .cabecalho {
+        
+    }
+    
+    .loja {
+        max-width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    } 
+    
+    .lista-tenis {
+        display: block;
+    }
+
+    .lista-tenis img {
+
+    }
+    .item-central {
+        margin: 0;
+    }
+    .item-lateral {
+        margin-left: 0;
+    }
+    .item-lateral1 {
+        margin-right: 0;
+    }
+    
+    .lista-tenis li {
+        list-style:none;
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .lista-tenis li img {
+        margin-top: 30px;
+    }
+
+    .lista-tenis li h3 {
+        margin: 0;
+    }
+    
+    .lista-tenis li p {
+        margin: 10px 0;
+        display: block;
+        padding: 0;
+    }
 }
