@@ -172,10 +172,6 @@ button {
         margin-bottom: 0px;
         position: static;
     }
-
-    .cabecalho {
-        
-    }
     
     .loja {
         max-width: 100%;
@@ -187,9 +183,6 @@ button {
         display: block;
     }
 
-    .lista-tenis img {
-
-    }
     .item-central {
         margin: 0;
     }
@@ -219,4 +212,63 @@ button {
         display: block;
         padding: 0;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        margin-bottom: 0px;
+        position: static;
+    }
+    header .container{
+        max-width: 80%;
+    }
+    
+    section .container {
+        max-width: 80%;
+        flex-direction: column;
+    }
+    
+    .loja {
+        max-width: 100%;
+        margin: 0;
+        padding-bottom: 30px;
+    }
+
+    .loja img {
+        max-width: 400px;
+    }
+
+    .lista-tenis li {
+        
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+
+    .lista-tenis li img {
+        max-width: 300px;
+    }
+
+    .lista-tenis {
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+
+    .lista-tenis li h3 {
+        margin: 0;
+    }
+    
+    .lista-tenis li p {
+        margin: 10px 0;
+        display: block;
+        padding: 0;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+    
 }
